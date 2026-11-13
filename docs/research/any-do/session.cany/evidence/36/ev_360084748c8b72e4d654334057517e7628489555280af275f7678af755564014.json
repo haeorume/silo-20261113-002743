@@ -1,0 +1,709 @@
+{
+  "id": "ev_360084748c8b72e4d654334057517e7628489555280af275f7678af755564014",
+  "subject": {
+    "kind": "website",
+    "name": "https://www.any.do/"
+  },
+  "operation": "web_site_capture",
+  "params": {
+    "include_html": true,
+    "max_height": 12000,
+    "noise_pass": false,
+    "visitor_view": false,
+    "widths": [
+      1440,
+      390
+    ]
+  },
+  "result": {
+    "counts": {
+      "forms": 0,
+      "headings": 19,
+      "images": 105,
+      "links": 193,
+      "outline": 291
+    },
+    "design": {
+      "backgrounds": [
+        {
+          "count": 100,
+          "value": "#ffffff"
+        },
+        {
+          "count": 32,
+          "value": "#eceef5"
+        },
+        {
+          "count": 11,
+          "value": "#f5f8fc"
+        },
+        {
+          "count": 9,
+          "value": "#9aa3b5"
+        },
+        {
+          "count": 6,
+          "value": "#0083ff"
+        },
+        {
+          "count": 6,
+          "value": "#2d6bd8"
+        },
+        {
+          "count": 5,
+          "value": "#e6e8ee"
+        },
+        {
+          "count": 4,
+          "value": "#e7835e"
+        },
+        {
+          "count": 4,
+          "value": "#12b886"
+        },
+        {
+          "count": 3,
+          "value": "#fff3ec"
+        },
+        {
+          "count": 3,
+          "value": "#0f1a2b"
+        },
+        {
+          "count": 3,
+          "value": "#121c2d"
+        },
+        {
+          "count": 2,
+          "value": "#d9f7ec"
+        },
+        {
+          "count": 2,
+          "value": "#1f2937"
+        },
+        {
+          "count": 2,
+          "value": "#2737cc"
+        },
+        {
+          "count": 2,
+          "value": "#ec6a6b"
+        }
+      ],
+      "css_variables": {},
+      "font_faces": [
+        {
+          "family": "Poppins",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "300"
+        },
+        {
+          "family": "Poppins",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "300"
+        },
+        {
+          "family": "Poppins",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "300"
+        },
+        {
+          "family": "Poppins",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "400"
+        },
+        {
+          "family": "Poppins",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "400"
+        },
+        {
+          "family": "Poppins",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "400"
+        },
+        {
+          "family": "Poppins",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "600"
+        },
+        {
+          "family": "Poppins",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "600"
+        },
+        {
+          "family": "Poppins",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "600"
+        },
+        {
+          "family": "Poppins",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "700"
+        },
+        {
+          "family": "Poppins",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "700"
+        },
+        {
+          "family": "Poppins",
+          "status": "loaded",
+          "style": "normal",
+          "weight": "700"
+        },
+        {
+          "family": "Poppins Fallback",
+          "status": "loaded",
+          "style": "normal",
+          "weight": "normal"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "100 900"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "100 900"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "100 900"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "100 900"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "100 900"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "100 900"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "style": "normal",
+          "weight": "100 900"
+        },
+        {
+          "family": "Inter Fallback",
+          "status": "loaded",
+          "style": "normal",
+          "weight": "normal"
+        },
+        {
+          "family": "Press Start 2P",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "400"
+        },
+        {
+          "family": "Press Start 2P",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "400"
+        },
+        {
+          "family": "Press Start 2P",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "400"
+        },
+        {
+          "family": "Press Start 2P",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "400"
+        },
+        {
+          "family": "Press Start 2P",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "400"
+        },
+        {
+          "family": "Press Start 2P Fallback",
+          "status": "unloaded",
+          "style": "normal",
+          "weight": "normal"
+        }
+      ],
+      "font_sizes": [
+        {
+          "count": 56,
+          "value": "14px"
+        },
+        {
+          "count": 45,
+          "value": "20px"
+        },
+        {
+          "count": 43,
+          "value": "18px"
+        },
+        {
+          "count": 31,
+          "value": "13px"
+        },
+        {
+          "count": 31,
+          "value": "12px"
+        },
+        {
+          "count": 30,
+          "value": "11px"
+        },
+        {
+          "count": 22,
+          "value": "12.5px"
+        },
+        {
+          "count": 13,
+          "value": "13.5px"
+        },
+        {
+          "count": 13,
+          "value": "10px"
+        },
+        {
+          "count": 11,
+          "value": "22px"
+        },
+        {
+          "count": 11,
+          "value": "15px"
+        },
+        {
+          "count": 11,
+          "value": "16px"
+        },
+        {
+          "count": 8,
+          "value": "11.5px"
+        },
+        {
+          "count": 8,
+          "value": "19px"
+        },
+        {
+          "count": 8,
+          "value": "16.5px"
+        },
+        {
+          "count": 7,
+          "value": "9px"
+        }
+      ],
+      "font_weights": [
+        {
+          "count": 158,
+          "value": "400"
+        },
+        {
+          "count": 80,
+          "value": "600"
+        },
+        {
+          "count": 73,
+          "value": "500"
+        },
+        {
+          "count": 56,
+          "value": "700"
+        },
+        {
+          "count": 10,
+          "value": "800"
+        }
+      ],
+      "fonts": [
+        {
+          "count": 191,
+          "value": "Inter, \"Inter Fallback\", Arial, Helvetica, sans-serif"
+        },
+        {
+          "count": 154,
+          "value": "Inter, \"Inter Fallback\", sans-serif"
+        },
+        {
+          "count": 21,
+          "value": "Poppins, \"Poppins Fallback\""
+        },
+        {
+          "count": 6,
+          "value": "ui-monospace, SFMono-Regular, Menlo, monospace"
+        },
+        {
+          "count": 3,
+          "value": "Helvetica, Calibri, Arial, sans-serif"
+        },
+        {
+          "count": 2,
+          "value": "ui-monospace, Menlo, monospace"
+        }
+      ],
+      "max_widths": [
+        {
+          "count": 11,
+          "value": "792px"
+        },
+        {
+          "count": 6,
+          "value": "1200px"
+        },
+        {
+          "count": 5,
+          "value": "1036.8px"
+        },
+        {
+          "count": 3,
+          "value": "1342px"
+        },
+        {
+          "count": 1,
+          "value": "2600px"
+        },
+        {
+          "count": 1,
+          "value": "1152px"
+        },
+        {
+          "count": 1,
+          "value": "748px"
+        },
+        {
+          "count": 1,
+          "value": "1280px"
+        }
+      ],
+      "radii": [
+        {
+          "count": 70,
+          "value": "50%"
+        },
+        {
+          "count": 37,
+          "value": "26px"
+        },
+        {
+          "count": 23,
+          "value": "8px"
+        },
+        {
+          "count": 22,
+          "value": "999px"
+        },
+        {
+          "count": 20,
+          "value": "6px"
+        },
+        {
+          "count": 20,
+          "value": "7px"
+        },
+        {
+          "count": 9,
+          "value": "10px"
+        },
+        {
+          "count": 8,
+          "value": "28px"
+        },
+        {
+          "count": 7,
+          "value": "18px"
+        },
+        {
+          "count": 5,
+          "value": "9999px"
+        }
+      ],
+      "shadows": [
+        {
+          "count": 37,
+          "value": "rgba(0, 0, 0, 0.1) 0px 1.4037px 35.0926px 0px"
+        },
+        {
+          "count": 14,
+          "value": "rgb(255, 255, 255) 0px 0px 0px 2px"
+        },
+        {
+          "count": 8,
+          "value": "rgba(3, 3, 3, 0.08) 0px 0px 0px 1px"
+        },
+        {
+          "count": 6,
+          "value": "rgba(3, 3, 3, 0.04) 0px 0px 0px 1px, rgba(3, 3, 3, 0.08) 0px 6px 16px 0px"
+        },
+        {
+          "count": 6,
+          "value": "rgba(0, 0, 0, 0.03) 0px 1.187px 1.187px 0px, rgba(0, 0, 0, 0.08) 0px 1.78px 9.495px 0px"
+        },
+        {
+          "count": 4,
+          "value": "rgb(236, 238, 245) 0px 0px 0px 1px"
+        },
+        {
+          "count": 2,
+          "value": "rgba(0, 0, 0, 0.08) 0px 2px 18px 0px, rgba(0, 0, 0, 0.04) 0px 1px 4px 0px"
+        },
+        {
+          "count": 1,
+          "value": "rgba(18, 184, 134, 0.024) 0px 0px 0px 13.4021px"
+        }
+      ],
+      "spacing": [
+        {
+          "count": 163,
+          "value": "40px"
+        },
+        {
+          "count": 118,
+          "value": "8px"
+        },
+        {
+          "count": 107,
+          "value": "12px"
+        },
+        {
+          "count": 90,
+          "value": "4px"
+        },
+        {
+          "count": 90,
+          "value": "7px"
+        },
+        {
+          "count": 88,
+          "value": "18px"
+        },
+        {
+          "count": 86,
+          "value": "5px"
+        },
+        {
+          "count": 82,
+          "value": "10px"
+        },
+        {
+          "count": 77,
+          "value": "42px"
+        },
+        {
+          "count": 65,
+          "value": "16px"
+        },
+        {
+          "count": 58,
+          "value": "6px"
+        },
+        {
+          "count": 52,
+          "value": "14px"
+        },
+        {
+          "count": 45,
+          "value": "2px"
+        },
+        {
+          "count": 27,
+          "value": "20px"
+        },
+        {
+          "count": 25,
+          "value": "30px"
+        },
+        {
+          "count": 24,
+          "value": "3px"
+        },
+        {
+          "count": 20,
+          "value": "22px"
+        },
+        {
+          "count": 17,
+          "value": "24px"
+        },
+        {
+          "count": 16,
+          "value": "1px"
+        },
+        {
+          "count": 16,
+          "value": "9px"
+        },
+        {
+          "count": 12,
+          "value": "11px"
+        },
+        {
+          "count": 11,
+          "value": "96px"
+        },
+        {
+          "count": 10,
+          "value": "28px"
+        },
+        {
+          "count": 8,
+          "value": "32px"
+        }
+      ],
+      "text_colors": [
+        {
+          "count": 119,
+          "value": "#737373"
+        },
+        {
+          "count": 102,
+          "value": "#030303"
+        },
+        {
+          "count": 54,
+          "value": "#ffffff"
+        },
+        {
+          "count": 25,
+          "value": "#8492a6"
+        },
+        {
+          "count": 22,
+          "value": "#5f6368"
+        },
+        {
+          "count": 12,
+          "value": "#1a1a1a"
+        },
+        {
+          "count": 10,
+          "value": "#0083ff"
+        },
+        {
+          "count": 5,
+          "value": "#e5484d"
+        },
+        {
+          "count": 4,
+          "value": "#ffffffb8"
+        },
+        {
+          "count": 4,
+          "value": "#f5b301"
+        },
+        {
+          "count": 3,
+          "value": "#6b7280"
+        },
+        {
+          "count": 3,
+          "value": "#ffffffad"
+        },
+        {
+          "count": 3,
+          "value": "#ffffffcc"
+        },
+        {
+          "count": 2,
+          "value": "#5cb4ff"
+        },
+        {
+          "count": 2,
+          "value": "#5ee0b5"
+        },
+        {
+          "count": 2,
+          "value": "#00000000"
+        }
+      ]
+    },
+    "files": [
+      "README.md",
+      "capture.json"
+    ],
+    "html_bytes": 338026,
+    "output_directory": "/Users/test/projects/silo-20261113-002743/docs/research/any-do/craft-capture",
+    "screenshots": [
+      {
+        "css_width": 1440,
+        "cut": false,
+        "file": "screenshot-1440.png",
+        "height": 9209,
+        "sha256": "69ae6fc415b41c8ad1b7a0bfa3192d1e1cc3cb6314a0c71fa1be2cff8941a55d",
+        "width": 1440
+      },
+      {
+        "css_width": 390,
+        "cut": true,
+        "file": "screenshot-390.png",
+        "height": 12000,
+        "sha256": "336caf5f6b54597a99f0c6690b77928f35f25b722f6fc43dd01d88375dbd65df",
+        "width": 390
+      }
+    ],
+    "title": "Any.do: To-do list and team task board that works with AI agents",
+    "url": "https://www.any.do/"
+  },
+  "summary": "Captured https://www.any.do/: 2 screenshot(s), 291 outline items, 19 headings, 105 images, 193 links, 0 forms → /Users/test/projects/silo-20261113-002743/docs/research/any-do/craft-capture.",
+  "confidence": "observed",
+  "authority": "our-run",
+  "environment": {
+    "clean_room": false,
+    "engine": "cdp",
+    "engine_version": "1.3",
+    "host": "macos-aarch64"
+  },
+  "limitations": [
+    {
+      "code": "one_state",
+      "message": "One state of the page: menus, dialogs and content behind interactions are not opened."
+    },
+    {
+      "code": "cross_origin_css",
+      "message": "CSS custom properties and breakpoints from cross-origin stylesheets can't be read."
+    }
+  ],
+  "coverage": {
+    "status": "complete",
+    "examined": 2,
+    "total": 2
+  },
+  "locations": [
+    {
+      "kind": "url",
+      "value": "https://www.any.do/"
+    },
+    {
+      "kind": "path",
+      "value": "/Users/test/projects/silo-20261113-002743/docs/research/any-do/craft-capture"
+    }
+  ],
+  "links": []
+}

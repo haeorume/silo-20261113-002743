@@ -1,0 +1,144 @@
+:root {
+  /* Primary */
+  --color-primary-500: #0083ff;
+  --color-primary-600: #2d6bd8;
+
+  /* Neutral */
+  --color-neutral-50: #ffffff;
+  --color-neutral-100: #f5f8fc;
+  --color-neutral-200: #eceef5;
+  --color-neutral-300: #8492a6;
+  --color-neutral-500: #737373;
+  --color-neutral-700: #5f6368;
+  --color-neutral-900: #030303;
+
+  /* Semantic */
+  --color-success-500: #22c55e;
+  --color-error-500: #ef4444;
+  --color-warning-500: #f59e0b;
+
+  /* Typography */
+  --font-sans: "Inter", "Inter Fallback", system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 30px;
+  --space-2xl: 48px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 26px;
+
+  /* Layout */
+  --max-content-width: 1200px;
+  --header-height: 64px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease-out;
+}
+
+/* Mobile-first base */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-neutral-50);
+  color: var(--color-neutral-900);
+  line-height: 1.5;
+}
+
+/* Hero */
+.hero {
+  padding-top: calc(var(--header-height) + var(--space-2xl));
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(28px, 5vw, 40px);
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+}
+
+.hero p {
+  font-size: 15px;
+  color: var(--color-neutral-700);
+  max-width: 640px;
+  margin: 0 auto var(--space-xl);
+}
+
+/* Features */
+.features {
+  padding: var(--space-2xl) 0;
+  display: grid;
+  gap: var(--space-md);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.feature-card {
+  background: var(--color-neutral-100);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+}
+
+/* Empty State */
+.empty-state {
+  padding: var(--space-2xl) 0;
+  text-align: center;
+}
+
+.empty-state h2 {
+  font-size: 20px;
+  margin-bottom: var(--space-sm);
+}
+
+/* Loading Skeleton */
+.skeleton {
+  background: linear-gradient(90deg, var(--color-neutral-200) 25%, var(--color-neutral-100) 50%, var(--color-neutral-200) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-sm);
+}
+
+@keyframes shimmer {
+  from { background-position: -200% 0; }
+  to { background-position: 200% 0; }
+}
+
+/* Error State */
+.error-state {
+  padding: var(--space-2xl) 0;
+  text-align: center;
+}
+
+.error-state p {
+  color: var(--color-neutral-700);
+  margin-bottom: var(--space-md);
+}
+
+/* Button */
+.btn-primary {
+  background-color: var(--color-primary-500);
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  transition: background-color var(--transition-fast);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-600);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .hero {
+    padding-top: calc(var(--header-height) + var(--space-xl));
+  }
+
+  .features {
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+  }
+}

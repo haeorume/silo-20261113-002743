@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>DailyList — 할 일 목록 SaaS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --color-primary-500: #0083ff;
+      --color-primary-600: #2d6bd8;
+      --color-neutral-50: #ffffff;
+      --color-neutral-100: #f5f8fc;
+      --color-neutral-200: #eceef5;
+      --color-neutral-300: #8492a6;
+      --color-neutral-500: #737373;
+      --color-neutral-700: #5f6368;
+      --color-neutral-900: #030303;
+      --space-xs: 4px;
+      --space-sm: 8px;
+      --space-md: 16px;
+      --space-lg: 24px;
+      --space-xl: 30px;
+      --space-2xl: 48px;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Inter", system-ui, -apple-system, sans-serif; background-color: var(--color-neutral-50); color: var(--color-neutral-900); line-height: 1.5; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 var(--space-lg); }
+    header { position: sticky; top: 0; background-color: var(--color-neutral-50); border-bottom: 1px solid var(--color-neutral-200); padding: var(--space-md) 0; z-index: 50; }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-weight: 700; font-size: 20px; color: var(--color-primary-500); text-decoration: none; }
+    .btn-start { background-color: var(--color-primary-500); color: #ffffff; padding: 10px 20px; border-radius: var(--radius-sm); font-weight: 600; text-decoration: none; transition: background-color 150ms ease-out; }
+    .btn-start:hover { background-color: var(--color-primary-600); }
+
+    .hero { padding-top: calc(var(--space-xl) + var(--header-height)); text-align: center; }
+    .hero h1 { font-size: clamp(28px, 5vw, 40px); font-weight: 700; margin-bottom: var(--space-md); }
+    .hero p { font-size: 15px; color: var(--color-neutral-700); max-width: 640px; margin: 0 auto var(--space-xl); }
+
+    .features { padding: var(--space-2xl) 0; display: grid; gap: var(--space-md); grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .feature-card { background: var(--color-neutral-100); padding: var(--space-lg); border-radius: var(--radius-md); }
+    .feature-card h3 { font-size: 18px; margin-bottom: var(--space-sm); }
+    .feature-card p { font-size: 14px; color: var(--color-neutral-700); }
+
+    .empty-state { padding: var(--space-2xl) 0; text-align: center; }
+    .empty-state h2 { font-size: 20px; margin-bottom: var(--space-sm); }
+    .empty-state p { color: var(--color-neutral-700); margin-bottom: var(--space-md); }
+
+    .loading-skeleton { padding: var(--space-2xl) 0; display: grid; gap: var(--space-md); grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .skeleton { background: linear-gradient(90deg, var(--color-neutral-200) 25%, var(--color-neutral-100) 50%, var(--color-neutral-200) 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; border-radius: var(--radius-sm); height: 120px; }
+    @keyframes shimmer { from { background-position: -200% 0; } to { background-position: 200% 0; } }
+
+    .error-state { padding: var(--space-2xl) 0; text-align: center; }
+    .error-state p { color: var(--color-neutral-700); margin-bottom: var(--space-md); }
+
+    @media (min-width: 768px) {
+      .hero { padding-top: calc(var(--space-xl) + var(--header-height)); }
+      .features { grid-template-columns: repeat(3, minmax(280px, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="#" class="logo">DailyList</a>
+      <a href="#add-task" class="btn-start">시작하기</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <h1>할 일을 정리하고, 오늘을 완성하세요</h1>
+      <p>DailyList 는 할 일을 추가하고 완료 표시할 수 있는 간단한 SaaS 입니다. 지금 시작해서 당신의 하루를 계획하세요.</p>
+      <a href="#add-task" class="btn-start">시작하기</a>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <article class="feature-card">
+        <h3>할 일 추가</h3>
+        <p>간단한 입력창에서 할 일을 빠르게 추가하세요. 제목과 마감일을 설정할 수 있습니다.</p>
+      </article>
+      <article class="feature-card">
+        <h3>완료 표시</h3>
+        <p>할 일을 완료했으면 체크박스를 클릭하세요. 목록에서 자동으로 정리됩니다.</p>
+      </article>
+      <article class="feature-card">
+        <h3>간단한 관리</h3>
+        <p>필터, 정렬, 검색 기능을 통해 당신의 할 일 목록을 항상 깔끔하게 유지하세요.</p>
+      </article>
+    </section>
+
+    <!-- Empty State (demonstration) -->
+    <section id="add-task" class="empty-state">
+      <h2>할 일 목록이 없습니다</h2>
+      <p>첫 번째 할 일을 추가해보세요. 당신의 하루를 계획하는 데 도움이 됩니다.</p>
+      <a href="#" class="btn-start">할 일 추가하기</a>
+    </section>
+
+    <!-- Loading State (demonstration) -->
+    <section class="loading-skeleton">
+      <div class="skeleton"></div>
+      <div class="skeleton"></div>
+      <div class="skeleton"></div>
+    </section>
+
+    <!-- Error State (demonstration) -->
+    <section class="error-state">
+      <h2>에러 발생</h2>
+      <p>데이터를 불러오는 중 문제가 발생했습니다. 잠시 후 다시 시도해주세요.</p>
+      <a href="#" class="btn-start">다시 시도하기</a>
+    </section>
+  </main>
+
+  <footer style="padding: var(--space-2xl) 0; text-align: center; color: var(--color-neutral-700); font-size: 13px;">
+    <p>&copy; 2026 DailyList. All rights reserved.</p>
+  </footer>
+</body>
+</html>

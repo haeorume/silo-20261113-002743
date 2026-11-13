@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "runnable_app",
+      "status": "PASS",
+      "detail": "package.json start, dev, build src/app/page.tsx"
+    }
+  ],
+  "actor": "node-runner",
+  "source": "/Users/test/projects/silo-20261113-002743"
+}
