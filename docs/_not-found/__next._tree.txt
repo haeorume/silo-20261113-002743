@@ -1,0 +1,2 @@
+:HL["/silo-20261113-002743/_next/static/chunks/2723q2kqff-j3.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}},"staleTime":300,"buildId":"uMkPiGzcbmw7cReSrsyQP"}
