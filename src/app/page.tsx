@@ -197,6 +197,14 @@ export default function Home() {
           <a href="https://www.any.do" className="text-primary hover:underline">
             Any.do
           </a>
+          {" · "}
+          <a href="todoist-com/" className="text-primary hover:underline">
+            Todoist 클론
+          </a>
+          {" · "}
+          <a href="any-do/" className="text-primary hover:underline">
+            Any.do 클론
+          </a>
         </p>
       </footer>
     </main>
